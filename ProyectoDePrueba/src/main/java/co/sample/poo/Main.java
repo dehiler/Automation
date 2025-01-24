@@ -1,37 +1,26 @@
 package co.sample.poo;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Scanner numeros = new Scanner(System.in);
-System.out.println("ingrese el primer numero: ");
-double n1 = numeros.nextInt();
-System.out.println(numeros);
-System.out.println("ingrese el segundo numero: ");
-double n2 = numeros.nextInt();
-System.out.println(numeros);
-System.out.println("ingrese el tercer numero: ");
-double n3 = numeros.nextInt();
-System.out.println(numeros);
+        char [] cadenaDeCaracteres= {'a', 'b', 'c', 'd'};
+        int [] vectorNumerico = {1,2,3,4,5,6,7,8,9};
+        String [] vectorDeCadenasdeCaracteres= {"palabra1", "palabra2"};
+        boolean [] vectorBoleano= {true, false, false};
 
-        Calculadora c1;
-            c1 = new Calculadora(n1, n2, n3);
+        char [][] dosDimensiones = {{'a', 'b', 'c', 'd'},
+                                    {'w', 'x', 'y', 'z'}};
 
-            if (n2 == 0){
-                System.out.println("Error: no se puede dividir entre cero");
-            }
+        List<String> lista = new ArrayList<>();
+        lista.add("dehiler");
+        lista.add("lucas");
+        lista.add("otro");
 
-            if (c1.getNum1() < c1.getNum2()){
-                System.out.println("no se puede realizar la operación");
-            } else {
-                System.out.println(c1.suma ());
-                System.out.println(c1.resta ());
-                System.out.println(c1.multi ());
-                System.out.println(c1.divi ());
-                System.out.println(c1.suma3 ());
-            }
-        }
+
     }
+}
